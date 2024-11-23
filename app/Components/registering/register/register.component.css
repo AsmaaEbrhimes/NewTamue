@@ -1,0 +1,141 @@
+.content_register {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_register .img_auth {
+  height: 100vh;
+}
+
+.content_register_form {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+
+::ng-deep .mat-mdc-form-field-infix {
+  flex: auto;
+  min-width: 0;
+  width: 500px !important;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+
+
+.btn_register {
+  margin: auto;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+}
+
+
+::ng-deep  input{
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 500px !important;
+  padding: 15px !important;
+  margin-bottom: 10px;
+}
+
+
+::ng-deep svg {
+  vertical-align: middle;
+  position: relative;
+  top: -10px;
+}
+
+.invalid{
+  opacity: 0.6;
+  cursor: no-drop;
+}
+
+@media (min-width:320px) and (max-width:767px){
+  ::ng-deep .mat-mdc-form-field-infix{
+    width:200px !important;
+  }
+
+  ::ng-deep  input{
+    width:200px !important;
+
+  }
+  .content_register{
+    flex-wrap: wrap;
+  }
+  .content_register_form{
+    width: 100%;
+  }
+  .content_register .img_auth {
+   display: none;
+  }
+
+  .content_register_form{
+    margin-top: 50px;
+  }
+}
+
+@media (min-width:767px) and (max-width:1200px){
+  .content_register .img_auth {
+    display: none;
+   }
+}
+
+
+@media (min-width:1200px) and (max-width:1400px){
+  .content_register .img_auth {
+    display: none;
+   }
+
+   .content_register_form{
+     margin-top: 50px;
+   }
+}
+
+
+@media (min-width:1400px) and (max-width:1628px){
+  .content_register .img_auth {
+    display: none;
+   }
+
+   .content_register_form{
+    margin-top: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

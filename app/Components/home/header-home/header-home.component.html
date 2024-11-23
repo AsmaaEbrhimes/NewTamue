@@ -1,0 +1,45 @@
+
+<div>
+    <div class="Container">
+        <div class="temus_comments mt-4" (click)="showDialog()">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <h4>Temu's Commitments</h4> 
+                <ul class=" d-flex flex-wrap">
+                    <li><i class="fa-solid fa-lock"></i> Secure</li>
+                    <li><i class="fa-regular fa-credit-card"></i> Save Payments</li>
+                    <li><i class="fa-solid fa-truck"></i> Delivery guarantee</li>
+                </ul>
+            </div>
+            <div class="temus_comments_two d-flex justify-content-between align-items-center">
+                <h4> <i class="fa-solid fa-bell"></i> Be wary of about delivery issues
+                    claming
+                    to be from Evri <i class="fa-solid fa-angle-right"></i></h4>
+                <h4>View</h4>
+            </div>
+
+
+            <p-dialog [modal]="true" [(visible)]="visible" [style]="{ width: '50rem' }"
+                [breakpoints]="{ '1199px': '100vw', '575px': '90vw' }" [maximizable]="true">
+                <img style="width:150px ; margin:auto ; text-align:center ; display:block"
+                    src="assets/imges/a7686991-ab20-4b49-a016-82ca928f32c1.png.slim.webp" />
+
+                <div class="m-auto text-center p-3">
+                    <h3>Security reminder</h3>
+                    <p class="w-100">Do not click on any links or pay any fees if you receive a message
+                        claiming
+                        to
+                        be from Evri about delivery issues due to an incorrect address. You should check the
+                        status
+                        of your package on Temu's order page or contact the courier directly.</p>
+                </div>
+                <button (click)="visible = false" class="w-50 m-auto d-block text-center p-3 text-light border-0 rounded-5 btn_tamue">Ok</button>
+                <div>
+                    <p
+                        style="margin:auto ; text-align:center ; width: 50%; padding-bottom: 20px; padding-top: 20px;">
+                        If you come across anything suspicious, please report it in time</p>
+                </div>
+            </p-dialog>
+        </div>
+    </div>
+
+</div>

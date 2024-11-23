@@ -1,0 +1,43 @@
+<div class="Container">
+    <div class="content_register">
+        <img class="img_auth" src="assets/imges/e-commerce-girl.webp" />
+        <form class="content_register_form" [formGroup]="loginForm" (submit)="LoginAccount()">
+            <h1 class="text-center fs-1 mb-4" style="color:orange ;">{{'Login.login' | translate}}</h1>
+           
+            <div>
+                <mat-form-field class="example-full-width">
+                    <mat-label> Enter Your Email</mat-label>
+                    <input type="email" matInput formControlName="email">
+                </mat-form-field>
+                <ng-container
+                    *ngIf="loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched">
+                    <p style="color: red;font-size: 20px;">please Enter Your Email</p>
+                </ng-container>
+            </div>
+
+
+         
+
+            <label class="text-left d-block mb-2" style="text-align: left ; font-size: 20px;;padding-left: 15px;">Enter
+                Password</label>
+            <div>
+                <p-password class="PASSWORD" [toggleMask]="true" formControlName="password"/>
+                <ng-container
+                    *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+                    <p style="color: red;font-size: 20px;">please Enter Your password</p>
+                </ng-container>
+            </div>
+
+           
+
+            <button  [disabled]="loginForm.invalid" [ngClass]="{'invalid':!loginForm.valid}"
+                class="btn_register">Create Account</button>
+            <p
+            [routerLink]="['/']"
+                style="font-size: 17px;padding-top:30px;position:relative;color: orange;letter-spacing: 1px;cursor: pointer;text-align: left;">
+                Already Have Account</p>
+        </form>
+        <p-toast />
+    </div>
+ 
+</div>

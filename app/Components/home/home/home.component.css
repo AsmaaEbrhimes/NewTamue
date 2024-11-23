@@ -1,0 +1,145 @@
+.item_card {
+    overflow: hidden;
+}
+
+.item_card div {
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.item_card video,
+.item_card .img_card {
+    height: 230px;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+
+.item_card .img_card:hover {
+    transform: scale(1.1);
+}
+
+.item_card video:hover {
+    transform: scale(1.1);
+}
+
+.titlt__shoping {
+    font-size: 20px;
+}
+
+.titlt__shoping p:first-child {
+    color: #FFA500
+}
+
+.titlt__shoping i {
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    top: -10px;
+    color: black
+}
+
+.desc_product_deatils p:first-child {
+    font-size: 15px;
+    color: gray;
+}
+
+.desc_product_deatils p:nth-child(2) span {
+    color: #FB8318;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.desc_product_deatils p:nth-child(3) {
+    color: rgb(253, 202, 155);
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.content_shopping_cart {
+    /* border-radius: 10px; */
+    background-image: url('../../../../assets/imges/5ae4a0c1-285b-4149-80fa-890aff2ae8ca.webp') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed !important;
+    top: 0 !important;
+    right: 0;
+    z-index: 999999999999;
+}
+
+.position-absolute {
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.col__1 {
+    width: 90%;
+}
+
+.col__2 {
+    width: 10%;
+    border-left: 1px solid rgb(160, 158, 158);
+
+}
+
+
+.Show {
+    width: 100%;
+
+}
+
+@media(min-width:320px) and (max-width:767px) {
+    .titlt__shoping i {
+        border: none;
+    }
+
+    .col__2 {
+        width: 0 !important;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .col__1 {
+        width: 100%;
+    }
+
+    .item_card video,
+    .item_card .img_card {
+        height: 150px;
+        border-radius: 0px;
+    }
+
+    .item_card div {
+        background-color: transparent;
+        border-radius: 0px;
+    }
+}
+
+@media(min-width:767px) and (max-width:1200px) {
+    .col__2 {
+        width: 0 !important;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .col__1 {
+        width: 100%;
+    }
+}
+
+
+
+@media(min-width:1200px) and (max-width:1400px) {
+    .col__2 {
+        width: 0 !important;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .col__1 {
+        width: 100%;
+    }
+
+}

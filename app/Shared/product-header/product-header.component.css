@@ -1,0 +1,79 @@
+
+.inp_search {
+    outline: none;
+    border: 2px solid black !important;
+}
+
+.seacrch_icon {
+    right: 24px;
+}
+
+.dilog_search_li {
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.dilog_search_li:hover {
+    background-color: #ccc;
+}
+
+.dilog_search_li i {
+    margin-right: 10px;
+}
+
+
+.contentent_search_two {
+    width: 100% !important;
+}
+
+.title_search_dilog {
+    margin-top: 19px;
+    font-weight: bold;
+}
+
+/* ::ng-deep .p-dialog {
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    max-height: 90%;
+    transform: scale(1);
+    position: relative;
+    top: -158px;
+} */
+.contentent_search_two div {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: 0.1s linear;
+}
+
+.contentent_search_two div:hover {
+    background-color: #e2dfdf;
+
+}
+
+.contentent_search_two .desc_dilog_search {
+    font-size: 15px;
+   
+}
+
+.contentent_search_two .desc_dilog_search i {
+    color: #fb7701;
+  
+}
+
+.img_dilog_search {
+    width: 30px;
+    height: 30px;
+}
+
+.contentent_search_two>div {
+    flex: 0 1 200px;
+}
+
+
+@media(min-width:320px) and (max-width:452px){
+    .search_product{
+        margin-top: 100px;
+    }
+}
+

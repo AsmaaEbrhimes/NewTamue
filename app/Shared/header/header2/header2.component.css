@@ -1,0 +1,12 @@
+.list_header_one i{
+    font-size: 20px;
+}
+
+.list_header_one li:first-child{
+    color: #adffa2;
+}
+
+
+.list_header_one li:nth-child(2) , .list_header_one li:nth-child(3){
+    color: #f9f1a3;
+}

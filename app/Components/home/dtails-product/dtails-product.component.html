@@ -1,0 +1,129 @@
+<div class="row overflow-hidden">
+    <div class="side1">
+        <app-header></app-header>
+        <div class="detailas_product">
+            <div class="Container">
+                <div class="row mt-2 mb-5 ">
+                    <div class="col-sm-12 col-md-6 col-xl-6 p-0">
+                        <div class="p-0 d-flex ">
+                            <div class="d-flex flex-column align-items-center w-25">
+                                <img (mouseover)="sliderImg($event)" *ngIf="objectDta?.img1" class="w-100 h-50 rounded"
+                                    [src]="'assets/imges/' + objectDta.img1" alt="" />
+                                <img (mouseover)="sliderImg($event)" *ngIf="objectDta?.img2"
+                                    class=" w-100 h-50 mt-2 rounded" [src]="'assets/imges/' + objectDta.img2" alt="" />
+                                <img (mouseover)="sliderImg($event)" *ngIf="objectDta?.img3"
+                                    class=" w-100 h-50 mt-2 rounded" [src]="'assets/imges/' + objectDta.img3" alt="" />
+                                <video (mouseover)="sliderVideo($event)" class="w-100 h-50 mt-2 rounded"
+                                    *ngIf="objectDta?.video" controls [src]="'assets/videos/' + objectDta.video" muted
+                                    autoplay></video>
+
+                            </div>
+
+
+
+                            <div class="ms-1">
+                                <div class="d-flex align-items-center position-relative h-100">
+                                    <span (click)="AnglSlideOne()"><i
+                                            class="fa-solid fa-angle-left fs-1 position-absolute bg-light"></i></span>
+                                    <img *ngIf="objectDta?.img1 && showImg" class="w-100 h-100 rounded" [src]="main_img"
+                                        alt="" />
+                                    <video (mouseover)="sliderVideo($event)" class="w-100 h-100 rounded"
+                                        *ngIf="objectDta?.video && showVideo" controls [src]="main_video" muted
+                                        autoplay></video>
+                                    <span (click)="AnglSlideTwo()"><i
+                                            class="fa-solid fa-angle-right fs-1 position-absolute bg-light"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="d-flex align-items-center">
+                            <h1 class="me-2">360 reviews</h1>
+                            <p class="me-2">
+                                <span>4.7</span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <p class="me-1 bg-success-subtle p-1 rounded"><i class="fa-solid fa-user-shield"></i> All
+                                reviews are from verified purchases</p>
+                        </div>
+
+                        <div class="d-flex align-items-center fw-bold">
+                            <p class="me-2">Item reviews(360)</p>
+                            <p>Provider reviews(113,318)</p>
+                        </div>
+
+                        <div class="d-flex align-items-center fedback_product_2">
+                            <div class="me-1 bg-secondary-subtle pt-1 p-2 pb-0 rounded-5">
+                                <p><i class="fa-solid fa-money-bill-transfer"></i>(51)</p>
+                            </div>
+                            <div class="me-1 bg-secondary-subtle pt-1 p-2 pb-0 rounded-5">
+                                <p>love(14)</p>
+                            </div>
+                            <div class="me-1 bg-secondary-subtle pt-1 p-2 pb-0 rounded-5">
+                                <p>Comfortabel(5)</p>
+                            </div>
+                            <div class="me-1 bg-secondary-subtle pt-1 p-2 pb-0 rounded-5">
+                                <p>Affordable(5)</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-2">
+                            <p><i class="fa-solid fa-star me-1"></i>
+                                <i class="fa-solid fa-star me-1"></i>
+                                <i class="fa-solid fa-star me-1"></i>
+                                <i class="fa-solid fa-star me-1"></i>
+                                <i class="fa-solid fa-star me-1"></i>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>absolutely love them, comfortable to wear, Beautiful!, Carini, fits well, fantastic, ,
+                                pleased with item, , pleased with item, fabulous glasses! 😍, gorgeous. extra look, nice
+                                as in described, good value for money</p>
+                        </div>
+
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <div class="bg-secondary-subtle custem_width rounded-circle p-2 me-1">
+                                    <i class="fa-solid fa-user "></i>
+                                </div>
+                                <span>ru***66 in on May 21, 2024</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-2">
+                            <p><i class="fa-solid fa-star me-1"></i>
+                                <i class="fa-solid fa-star me-1"></i>
+                                <i class="fa-solid fa-star me-1"></i>
+                                <i class="fa-solid fa-star me-1"></i>
+                                <i class="fa-solid fa-star me-1"></i>
+                            </p>
+                        </div>
+                        <div>
+                            <p>absolutely love them, gorgeous. extra look, nice as in described, good value for money,
+                                fits well, fantastic, comfortable to wear</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-xl-6 mt-sm-3 mt-md-3 mt-xl-0 content_details_product">
+                        <app-details-righr-product [objectDta]="objectDta"></app-details-righr-product>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <app-footer></app-footer>
+    </div>
+
+
+
+    <div class=" bg-light p-0 position-relative content_shopping_cart side2 overflow-hidden">
+        <app-sup-total></app-sup-total>
+    </div>
+</div>

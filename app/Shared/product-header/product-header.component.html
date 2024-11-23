@@ -1,0 +1,52 @@
+<p-dialog [modal]="true" [(visible)]="visible" [style]="{ width: '30rem'}">
+    <div class="p-2">
+        <div *ngIf="contentsearchone">
+            <div class=" w-100 d-flex align-items-center content_search">
+                <input (input)="filterSearshProduct($event)" type='text'
+                    class='inp_search w-100 border-0 rounded-pill p-2' />
+                <i class="fa-solid fa-magnifying-glass seacrch_icon position-absolute text-dark fw-bolder"></i>
+            </div>
+            <ul>
+                <li *ngFor="let item of filtervalue" class="dilog_search_li mt-2 pb-2 w-100 p-2 rounded-2"><i
+                        class="fa-solid fa-magnifying-glass"></i>{{item.category}}</li>
+            </ul>
+            <ul *ngIf="filtervalue == ''">
+                <li class="dilog_search_li mt-2 pb-2 w-100 p-2 rounded-2"><i
+                        class="fa-solid fa-magnifying-glass"></i>clothing Womens</li>
+                <li class="dilog_search_li mt-2 pb-2 w-100 p-2 rounded-2"><i
+                        class="fa-solid fa-magnifying-glass"></i>Acceroies Mopile</li>
+                <li class="dilog_search_li mt-2 pb-2 w-100 p-2 rounded-2"><i
+                        class="fa-solid fa-magnifying-glass"></i>Beatuy</li>
+                <li class="dilog_search_li mt-2 pb-2 w-100 p-2 rounded-2"><i
+                        class="fa-solid fa-magnifying-glass"></i>Kids</li>
+                <li class="dilog_search_li mt-2 pb-2 w-100 p-2 rounded-2"><i
+                        class="fa-solid fa-magnifying-glass"></i>clothing children</li>
+                <li class="dilog_search_li mt-2 pb-2 w-100 p-2 rounded-2"><i
+                        class="fa-solid fa-magnifying-glass"></i>party-supplies</li>
+                <li class="dilog_search_li mt-2 pb-2 w-100 p-2 rounded-2"><i
+                        class="fa-solid fa-magnifying-glass"></i>Fashion</li>
+            </ul>
+        </div>
+
+
+        <div *ngIf="contentsearchtwo" class=" search_product">
+            <div class="content_search w-100 d-flex align-items-center">
+                <input (input)="filterSearshProduct($event)" type='text'
+                    class='inp_search w-100 border-0 rounded-pill p-2' />
+                <i class="fa-solid fa-magnifying-glass seacrch_icon position-absolute text-dark fw-bolder"></i>
+            </div>
+            <h3 class="title_search_dilog m-0 ms-5  mt-2 fw-bold">{{'Home.Recentlysearched' | translate}}</h3>
+
+
+            <div
+                class="d-flex align-items-center justify-content-center flex-wrap w-100 ms-2 rounded-pill p-2 contentent_search_two">
+                <div class="d-flex align-items-center mt-1  w-100  position-relative rounded-5 p-1 "
+                    *ngFor="let item of filteredProducts">
+                    <img class="img_dilog_search rounded-circle" [src]='[item.image]' />
+                    <p class="desc_dilog_search ms-4  fw-bolder"> <i
+                            class="fa-solid fa-fire-flame-curved position-relative me-2"></i>{{item.category}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</p-dialog>

@@ -1,0 +1,72 @@
+<div class="Container">
+    <div class="content_register">
+        <img class="img_auth" src="assets/imges/e-commerce-girl.webp" />
+        <form class="content_register_form" [formGroup]="registerForm" (submit)="CreateAccount()">
+            <h1 class="text-center fs-1 mb-4" style="color:orange ;">{{'register.CreateAccount' | translate}}</h1>
+            <div>
+                <mat-form-field class="example-full-width">
+                    <mat-label> Enter Your UserName</mat-label>
+                    <input type="email" matInput formControlName="userName">
+                </mat-form-field>
+
+                <ng-container
+                    *ngIf="registerForm.get('userName')?.hasError('required') && registerForm.get('userName')?.touched">
+                    <p style="color: red;font-size: 20px;">please Enter Your UserName</p>
+                </ng-container>
+            </div>
+
+            <div>
+                <mat-form-field class="example-full-width">
+                    <mat-label> Enter Your Email</mat-label>
+                    <input type="email" matInput formControlName="email">
+                </mat-form-field>
+                <ng-container
+                    *ngIf="registerForm.get('email')?.hasError('required') && registerForm.get('email')?.touched">
+                    <p style="color: red;font-size: 20px;">please Enter Your Email</p>
+                </ng-container>
+            </div>
+
+
+            <div>
+                <mat-form-field class="example-full-width">
+                    <mat-label> Enter Your Phone</mat-label>
+                    <input class="w-100" type="email" matInput formControlName="phone">
+                </mat-form-field>
+                <ng-container
+                    *ngIf="registerForm.get('phone')?.hasError('required') && registerForm.get('phone')?.touched">
+                    <p style="color: red;font-size: 20px;">please Enter Your Phone</p>
+                </ng-container>
+            </div>
+
+
+            <label class="text-left d-block mb-2" style="text-align: left ; font-size: 20px;;padding-left: 15px;">Enter
+                Password</label>
+            <div>
+                <p-password class="PASSWORD" [toggleMask]="true" formControlName="password" />
+                <ng-container
+                    *ngIf="registerForm.get('password')?.hasError('required') && registerForm.get('password')?.touched">
+                    <p style="color: red;font-size: 20px;">please Enter Your password</p>
+                </ng-container>
+            </div>
+
+            <label class="text-left d-block mb-2"
+                style="text-align: left ; font-size: 20px;padding-left: 15px;">Confarme Password</label>
+            <div>
+                <p-password class="PASSWORD" [toggleMask]="true" (change)="checkPasswords($event)"></p-password>
+                <ng-container *ngIf="passwordsMismatch">
+                    <p style="color: red; font-size: 20px;">Passwords do not match</p>
+                </ng-container>
+            </div>
+
+
+            <button [disabled]="registerForm.invalid" [ngClass]="{'invalid':!registerForm.valid}"
+                class="btn_register">Create Account</button>
+            <p
+            [routerLink]="['/login']"
+                style="font-size: 17px;padding-top:30px;position:relative;color: orange;letter-spacing: 1px;cursor: pointer;text-align: left;">
+                Do You Have Account</p>
+        </form>
+        <p-toast />
+    </div>
+
+</div>
