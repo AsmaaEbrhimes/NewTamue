@@ -21,6 +21,14 @@ export class FashionComponent {
   }
   AddWishList(item: any) {
     item.colorWishList = !item.colorWishList
-    console.log(item)
+    if (this.filterFashionCategory && typeof this.filterFashionCategory === 'object') {
+      const existingWishList = JSON.parse(localStorage.getItem('WishlistProducts') || '[]');
+      const exists = existingWishList.some((item: any) => item._id === item._id);
+      if (!exists) {
+        existingWishList.push(this.filterFashionCategory);
+        localStorage.setItem('cartmainProduct', JSON.stringify(existingWishList));
+      }
+
+    }
   }
 }

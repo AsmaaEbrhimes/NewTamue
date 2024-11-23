@@ -24,10 +24,10 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+    // if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       Aos.init();
       window.addEventListener('load',Aos.refresh)
-    }
+    // }
     }
    
 }
