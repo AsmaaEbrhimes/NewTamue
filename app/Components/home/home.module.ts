@@ -17,6 +17,8 @@ import { DilogProductHomeComponent } from './dilog-product-home/dilog-product-ho
 import { DetailsRighrProductComponent } from './details-righr-product/details-righr-product.component';
 import { HeaderHomeComponent } from './header-home/header-home.component';
 import { FashionComponent } from './fashion/fashion.component';
+import { ClothingChildrenComponent } from './clothing-children/clothing-children.component';
+import { TabsProductsComponent } from './tabs-products/tabs-products.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { FashionComponent } from './fashion/fashion.component';
     DetailsRighrProductComponent,
     HeaderHomeComponent,
     FashionComponent,
+    ClothingChildrenComponent,
+    TabsProductsComponent,
   ],
   imports: [
     CommonModule,
@@ -40,10 +44,6 @@ import { FashionComponent } from './fashion/fashion.component';
     CheckboxModule,
     RadioButtonModule,
     TranslatingModule,
-
-  ],
-  exports:[
-    SupTotalComponent,
   ]
 })
 export class HomeModule { }
