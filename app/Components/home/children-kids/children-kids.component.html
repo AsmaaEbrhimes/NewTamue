@@ -1,10 +1,10 @@
-<div class="">
-    <div class="width_col_one">
+
+   <div class="width_col_one">
         <app-header></app-header>
         <div class="Container">
             <app-tabs-products></app-tabs-products>
             <div class="product_header_fashion row mb-3">
-                <div class="col-sm-6 col-md-6 col-xl-2 col_hover mt-2 mb-4" *ngFor="let item of filterClotihingChildrenCategory" data-aos="zoom-in"  >
+                <div class="col-sm-6 col-md-6 col-xl-2 col_hover mt-2 mb-4" *ngFor="let item of filterKidsCategory" data-aos="zoom-in"  >
                     <img class="w-100" [src]="item?.image" />
                     <div class="d-flex justify-content-around mt-2">
                         <span>{{item?.description}}....</span>
@@ -21,14 +21,46 @@
                         </div>
                         <p (click)="AddWishList(item)" class="text_right pointer d-block" [ngClass]="{'red': item.colorWishList}"><i class="fa-solid fa-heart fs-4"></i></p>
                     </div>
-                </div> 
+                </div>  
             </div>
         </div>
         <app-footer></app-footer>
-    </div>
+    </div> 
 
-    <div class="width_col_two bg-light content_shopping_cart overflow-hidden">
+
+
+    <div class="width_col_two bg-light content_shopping_cart">
         <app-sup-total></app-sup-total>
     </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

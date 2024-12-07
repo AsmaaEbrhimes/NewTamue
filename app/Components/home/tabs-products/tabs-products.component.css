@@ -8,32 +8,16 @@
 }
 
 .category_product ul li {
-    z-index: 9999999999;
     border: 1px solid black;
 
 }
 
-.category_product ul li::before{
-    content: '';
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #deac16;
-    color: white;
-    z-index: -1;
-    transition: 0.3s linear;
-}
 
 .active{
-    background-color: #deac16;
+    background-color: #deac16 !important;
 }
 
-.category_product ul li:hover::before{
-  width: 100%;
-    color: white;
-}
+
 
 
 
@@ -43,7 +27,7 @@
         flex-wrap: wrap;
     }
     .width{
-        width: 50%;
+        width: 100%;
     } 
 }
 

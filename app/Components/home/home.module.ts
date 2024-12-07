@@ -19,6 +19,14 @@ import { HeaderHomeComponent } from './header-home/header-home.component';
 import { FashionComponent } from './fashion/fashion.component';
 import { ClothingChildrenComponent } from './clothing-children/clothing-children.component';
 import { TabsProductsComponent } from './tabs-products/tabs-products.component';
+import { ChildrenKidsComponent } from './children-kids/children-kids.component';
+import { BeautyCategoryComponent } from './beauty-category/beauty-category.component';
+import { AcceioresMobileComponent } from './acceiores-mobile/acceiores-mobile.component';
+import { ClothingWomensComponent } from './clothing-womens/clothing-womens.component';
+import { BagGirlComponent } from './bag-girl/bag-girl.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { RightShoppingCartComponent } from './right-shopping-cart/right-shopping-cart.component';
+import { WisListProductComponent } from './wis-list-product/wis-list-product.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +39,14 @@ import { TabsProductsComponent } from './tabs-products/tabs-products.component';
     FashionComponent,
     ClothingChildrenComponent,
     TabsProductsComponent,
+    ChildrenKidsComponent,
+    BeautyCategoryComponent,
+    AcceioresMobileComponent,
+    ClothingWomensComponent,
+    BagGirlComponent,
+    ShoppingCartComponent,
+    RightShoppingCartComponent,
+    WisListProductComponent,
   ],
   imports: [
     CommonModule,

@@ -27,5 +27,17 @@
         "Fashion": "فاشون",
         "Kids": "اطفالي",
         "Beauty": "تجميل"
+    },
+    "ShoppingCart":{
+        "Alldataisencrypted":"جميع البيانات مشفره",
+        "SignIn/Register":"تسجيل الدخول والخروج",
+        "FreeshippingfromTemuand":" شحن مجاني من تمو بعض المزودين المحليين ",
+        "FreeshippingfromTemutWO":"شحن مجاني من تمو",
+        "SelectAll":"تحديد الكل",
+        "LocalWareHouse":"المستودع المحلي",
+        "All":"الكل",
+        "ShipsFromTamue":"يشحن من تمو"
+
+
     }
 }

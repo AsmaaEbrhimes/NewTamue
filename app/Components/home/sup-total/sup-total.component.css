@@ -40,7 +40,14 @@
 .sup_total_button button:nth-child(2) {
     border: 1px solid gray !important;
     color: black !important;
+    transition: 0.5s linear;
 }
+
+.sup_total_button button:nth-child(2):hover{
+    border: 2px solid gray !important;
+
+}
+
 
 .inp_radio_shopping{
     transform: scale(1.5);

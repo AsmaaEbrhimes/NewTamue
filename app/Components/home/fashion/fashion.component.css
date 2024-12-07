@@ -8,13 +8,13 @@
     font-size: 20px;
 }
 
-.col_hover{
+/* .col_hover{
     transition: 0.5s linear;
 }
 
 .col_hover:hover{
     box-shadow: 0 0 20px black;
-}
+} */
 
 .text_right{
     text-align: right;
@@ -22,6 +22,4 @@
 .pointer{
     cursor: pointer !important;
 }
-.red{
-    color: red;
-}
+

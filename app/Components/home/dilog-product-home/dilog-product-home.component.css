@@ -98,7 +98,7 @@ background-color: #fb7701;
 
 
 
-/* ::ng-deep .p-dialog {
+::ng-deep .p-dialog {
     display: flex;
     flex-direction: column;
     pointer-events: auto;
@@ -106,7 +106,10 @@ background-color: #fb7701;
     transform: scale(1);
     position: relative;
     top: 10px !important;
-} */
+
+    z-index: 999999999999999999999999999999999999999999999999999999999 !important;
+
+}
 img{
     cursor: pointer;
 }

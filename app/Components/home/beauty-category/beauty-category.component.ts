@@ -2,19 +2,14 @@ import { Component } from '@angular/core';
 import { HomeService } from '../../../core/Services/home.service';
 
 @Component({
-  selector: 'app-fashion',
-  templateUrl: './fashion.component.html',
-  styleUrl: './fashion.component.css'
+  selector: 'app-beauty-category',
+  templateUrl: './beauty-category.component.html',
+  styleUrl: './beauty-category.component.css'
 })
-export class FashionComponent {
-  filterFashionCategory: any[] = []
-  colorWishList: boolean = false
-  MainIconWishList: boolean = true
-  Id: any
-  IdWishList: any
-  constructor(private servicesHome: HomeService) {
-    this.GetCategoryFashion()
-    this.CheckColorWishlist()
+export class BeautyCategoryComponent {
+  filterBeautyCategory: any
+  constructor(private homeServices: HomeService) {
+    this.GetAllBeautyCategory()
   }
 
 
@@ -23,7 +18,7 @@ export class FashionComponent {
   CheckColorWishlist() {
     const CheakColorData = JSON.parse(localStorage.getItem('WishlistProducts') || '[]');
     if (CheakColorData && CheakColorData.length > 0) {
-      this.filterFashionCategory.map(item => {
+      this.filterBeautyCategory.map((item: any) => {  
         const existsInWishList = CheakColorData.some((wishlistItem: any) => wishlistItem._id === item._id);
         if (existsInWishList) {
           item.colorWishList = true;
@@ -33,13 +28,23 @@ export class FashionComponent {
       });
     }
   }
+  
 
-
-  GetCategoryFashion() {
-    this.servicesHome.GetAllproduct('product/All').subscribe((res: any) => {
-      this.filterFashionCategory = res.filter((ele: any) => ele.category === 'Fashion');
-      this.CheckColorWishlist();
+  GetAllBeautyCategory() {
+    this.homeServices.GetAllproduct('product/All').subscribe((res: any) => {
+      this.filterBeautyCategory = res.filter((ele: any) => ele.category === "Beatuy");
+      this.CheckColorWishlist()
     });
+  }
+
+
+  AddtoCart(item: any) {
+    const existingCart = JSON.parse(localStorage.getItem('cartSecondProduct') || '[]');
+    let ExsistItem = existingCart.some((ele: any) => ele._id == item._id)
+    if (!ExsistItem) {
+      existingCart.push(item)
+      localStorage.setItem('cartSecondProduct',JSON.stringify(existingCart))
+    }
   }
 
 
@@ -49,7 +54,6 @@ export class FashionComponent {
     const exists = existingWishList.some((wishlistItem: any) => wishlistItem._id === item._id);
     if (!exists && item.colorWishList) {
       existingWishList.push(item);
-      item.colorWishList = true
       localStorage.setItem('WishlistProducts', JSON.stringify(existingWishList));
     }
     else if (exists && !item.colorWishList) {
@@ -57,15 +61,4 @@ export class FashionComponent {
       localStorage.setItem('WishlistProducts', JSON.stringify(updatedWishList));
     }
   }
-
-  AddtoCart(item: any) {
-    const existingCart = JSON.parse(localStorage.getItem('cartSecondProduct') || '[]');
-    let ExsistItem = existingCart.some((ele: any) => ele._id == item._id)
-    if (!ExsistItem) {
-      existingCart.push(item)
-      localStorage.setItem('cartSecondProduct', JSON.stringify(existingCart));
-    }
-  }
-
-
 }

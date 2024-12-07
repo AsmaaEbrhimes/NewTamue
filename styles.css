@@ -73,6 +73,18 @@ input:focus{
     cursor: pointer;
 }
 
+.red{
+    color: red;
+}
+
+.col_hover{
+    transition: 0.5s linear;
+}
+
+.col_hover:hover{
+    box-shadow: 0 0 20px black;
+}
+
 @media(min-width:320px) and (max-width:767px){
     .width_col_two {
         width: 0 !important;

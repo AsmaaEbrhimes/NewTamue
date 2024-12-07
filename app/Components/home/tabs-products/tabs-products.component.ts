@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-tabs-products',
   templateUrl: './tabs-products.component.html',
-  styleUrl: './tabs-products.component.css'
+  styleUrl: './tabs-products.component.css',
 })
 export class TabsProductsComponent {
   IdColor:any

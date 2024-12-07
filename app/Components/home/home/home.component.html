@@ -17,16 +17,16 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-xl-12 bg-md-danger">
                             <div class="row">
-                                <div *ngFor="let item of dataHome" class="  col-6 col-sm-6 col-md-4 col-xl-2">
+                                <div *ngFor="let item of dataHome" class="col-6 col-sm-6 col-md-4 col-xl-2">
                                     <div class="item_card  w-100 mt-2" data-aos="zoom-in">
                                         <div class="p-sm-0 p-md-2  p-xl-2">
                                             <ng-container *ngIf="item.video; else showImage">
-                                                <video class="w-100 " src="assets/videos/{{item.video}}" muted autoplay
+                                                <video class="w-100 " src="assets/videos/{{item.video}}"  
                                                     [routerLink]="['detailsproducr', item.id]"></video>
                                             </ng-container>
                                             <ng-template #defaultVideo>
-                                                <video class="w-100" src="assets/videos/default-video.mp4" muted
-                                                    autoplay [routerLink]="['detailsproducr', item.id]">
+                                                <video class="w-100" src="assets/videos/default-video.mp4" 
+                                                     [routerLink]="['detailsproducr', item.id]">
                                                 </video>
                                             </ng-template>
 
@@ -63,7 +63,7 @@
                 <app-footer></app-footer>
             </div>
 
-            <div class="content_shopping_cart bg-light  overflow-hidden p-0 col__2"
+            <div class="content_shopping_cart bg-light overflow-hidden p-0 col__2"
                 >
                 <div class=" d-sm-none d-md-none d-xl-block">
                     <app-supscrption></app-supscrption>
