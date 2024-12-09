@@ -1,0 +1,28 @@
+.border_bottom{
+    border-bottom: 1px solid #ccc;
+}
+
+.Color_orange{
+    color:#fb7701
+}
+
+.BackGroundOrange{
+    background-color: #fb7701;
+}
+
+.Colo_gray{
+    color: rgb(180, 180, 180);
+}
+.style_icon{
+    border-radius: 50%;
+    border: 1px solid rgb(180, 180, 180);
+    display: inline-block;
+    width: 15px;
+    height: 15px
+}
+
+.payment_width_img{
+    width: 40px;
+    height: 30px;
+}
+

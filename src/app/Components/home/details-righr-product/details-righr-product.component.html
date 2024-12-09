@@ -1,0 +1,70 @@
+<div>
+    <p class="fw-bold">{{objectDta.title}}</p>
+    <p class="fw-bold">£{{objectDta.salary}}
+        <span>Pay £1.49today</span><span>-55%</span><span>RRP£9.99</span>
+
+    </p>
+    <p class="border border-dark p-2 position-relative">{{'Installment.installment' | translate }}<span
+            class="ms-1 p-1 rounded">Klarna</span></p>
+    <div class="Free__shipping">
+        <p class=" p-2 rounded"><i class="fa-solid fa-check me-2"></i>{{'Installment.delvire' | translate }}</p>
+    </div>
+    <p class="Local__shipping text-light fw-bold p-2 rounded"><i class="fa-solid fa-truck-fast"></i>
+        Local
+        warehouse Delivery: 2-5 business days</p>
+    <div class="img__shopping text-light rounded">
+        <div class="p-1">
+            <span>Lightning deal |</span>
+            <img src="assets/imges/404e20b4-4841-4551-8d7c-073b3ce2354a.png.slim.webp" />
+            <span>-66% last day</span>
+
+        </div>
+
+        <div>
+            <p class="text-dark fw-bold p-1">Color: Multicolored</p>
+
+            <div class="d-flex align-items-center p-1">
+                <img *ngIf="objectDta?.img1" class="w-25 h-25 rounded me-2 ms-1"
+                    [src]="'assets/imges/' + objectDta.img1" alt="Product Image" />
+
+                <img *ngIf="objectDta?.img2" class="w-25 h-25 rounded me-2" [src]="'assets/imges/' + objectDta.img2"
+                    alt="Product Image" />
+
+                <img *ngIf="objectDta?.img3" class="w-25 h-25 rounded me-2" [src]="'assets/imges/' + objectDta.img3"
+                    alt="Product Image" />
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<p class="fw-bold mt-2">Color: Mixed Color</p>
+<div class="size__almost">
+    <span class="fw-bold">{{ 'Installment.Qty' | translate }} </span>
+    <select class="w-25 p-1 border border-none  border-dark-subtle rounded">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+    <span>
+        <i class="fa-brands fa-ioxhost"></i>
+        <span>{{ 'Installment.almost' | translate }}</span>
+    </span>
+
+</div>
+
+
+<div class="mt-2">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star-half-stroke"></i>
+    <i class="fa-solid fa-star-half-stroke"></i>
+</div>
+
+<button
+    class="mt-2 m-auto text-center d-block w-75 border border-none p-3 text-light rounded-pill fw-bold btn_product_details_shopping"><i
+        class="fa-brands fa-google-wallet"></i>{{ 'Installment.Add' | translate}}</button>

@@ -1,0 +1,142 @@
+.cursor-pointer{
+    cursor: pointer;
+}
+.content_header_two {
+    background-color: #deac16;
+    font-size: 17px;
+  
+}
+ ul li{
+     cursor: pointer;
+ }
+.content_header_two div:nth-child(3) i {
+    right: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.content_header_two div:nth-child(3) input {
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    border: 2px solid black !important;
+}
+
+
+.content_header_two div:nth-child(4) button {
+    transition: 0.5s linear;
+}
+
+
+.content_header_two div:nth-child(4) button:hover {
+    background-color: black;
+    color: white;
+}
+
+.content_header_two .shopping {
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+.List_header_three ul li:nth-child(3) button {
+    transition: 0.5s linear;
+}
+
+.List_header_three ul li:nth-child(3) button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.content_header_two .shopping:hover {
+    background-color: white !important;
+    color: black;
+}
+
+.list_responsive {
+    display: none;
+}
+
+.HeartIcon{
+    color: red; 
+    transition: 0.5s linear;
+}
+
+.HeartIcon:hover{
+background-color: white !important;
+}
+
+@media(min-width:320px) and (max-width:767px) {
+    .content_header_two div h1 {
+        font-size: 15px;
+    }
+
+    .content_header_two {
+        font-size: 13px;
+    }
+
+    .List_header_one,
+    .List_header_three {
+        display: none;
+    }
+
+
+    .list_responsive {
+        display: block;
+        font-size: 13px;
+    }
+
+    .content_header_two div:nth-child(3) input {
+        padding: 2px;
+        width: 100% !important;
+        position: relative;
+        margin-left: 10px;
+        top:-10px
+    }
+
+    .content_header_two div:nth-child(3) i {
+        background-color: transparent !important;
+        color: black !important;
+        font-weight: bolder;
+        top:-10px
+    }
+}
+
+
+@media(min-width:767px) and (max-width:1200px) {
+    .content_header_two {
+        font-size: 11px;
+    }
+
+    .content_header_two div h1 {
+        font-size: 11;
+    }
+
+    .content_header_two div:nth-child(3) input {
+        display: none;
+    }
+
+    .content_header_two div:nth-child(3) i {
+        position: relative;
+        top: -10px;
+        margin: auto;
+        text-align: center;
+        display: block;
+
+    }
+
+    .List_header_one ul li {
+
+        padding-left: 9px !important;
+    }
+
+    .content_header_two :nth-child(3) i {
+        position: relative !important;
+    }
+}
+
+
+@media(min-width:1200px) and (max-width:1400px) {
+    .content_header_two {
+        font-size: 15px;
+    }
+}

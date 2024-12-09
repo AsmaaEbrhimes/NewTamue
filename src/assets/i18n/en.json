@@ -1,0 +1,47 @@
+{
+    "register": {
+        "CreateAccount": "Register"
+    },
+
+    "Login": {
+        "login": "Login"
+    },
+
+    "Installment": {
+        "installment": "3 interest-free monthly installments with",
+        "delvire": "Free shipping special for you",
+        "almost": "Almost sold out",
+        "Qty": "Qty",
+        "Add": "Add To Cart"
+    },
+    
+    "Home": {
+        "Continue": "Continue",
+        "Recentlysearched":"Recently searched",
+        "supTotal":"sup Total",
+        "Freeshippingspecialforyou":"Free shipping special for you",
+        "check":"check",
+        "GoCart":"Go To Cart",
+        "Selectall":"Select All",
+        "clothingWomens": "clothing Womens",
+        "AcceroiesMopile": "Acceroies Mopile",
+        "clothingchildren": "clothing children",
+        "party-supplies": "clothing children",
+        "Fashion": "Fashion",
+        "Kids": "Kids",
+        "Beauty": "Beauty"
+    },
+    "ShoppingCart":{
+        "Alldataisencrypted":"All data is encrypted",
+        "SignIn/Register":"SignIn/Register",
+        "FreeshippingfromTemuand":"Free shipping from Temu and some local providers",
+        "FreeshippingfromTemutWO":"Free shipping from Temu",
+        "SelectAll":"SelectAll",
+        "LocalWareHouse":"LocalWareHouse",
+        "All":"All",
+        "ShipsFromTamue":"Ships From Tamue"
+
+
+    }
+}
+

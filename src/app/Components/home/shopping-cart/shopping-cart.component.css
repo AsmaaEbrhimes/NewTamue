@@ -1,0 +1,125 @@
+.BackGround_one {
+    background-color: #cfe5cd;
+}
+
+.border_Right {
+    border-right: 1px solid #c6c2c2;
+}
+
+.borders {
+    border: 1px solid rgb(124, 123, 123);
+}
+
+.width_li {
+    width: 10%;
+}
+
+.text-green {
+    color: green;
+}
+
+.Custom_size {
+    font-size: 17px;
+}
+
+.Custom_size_two {
+    font-size: 16px;
+}
+
+
+.border_card {
+    border-bottom: 1px solid rgb(206, 205, 205);
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.Custm_img_size {
+    height: 150px;
+    width: 130px;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.Custom_color_discount {
+    background-color: #feefe1;
+    width: fit-content;
+    top:-15px
+}
+
+.border_color {
+    border: 1px solid #fb7701;
+    color: #fb7701
+}
+
+.custem_width_select {
+    width: 10%;
+}
+
+.Notification {
+    background-color: black;
+}
+
+.Notification::before {
+    content: "";
+    position: absolute;
+    border-width: 15px;
+    border-color: transparent transparent black transparent;
+    border-style: solid;
+    top: -25px;
+    left: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.flex_properites{
+    display: flex;
+}
+
+
+.flexPropertyTwo{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.HoverIcon{
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.HoverIcon:hover{
+color: red;
+}
+
+.property_position{
+    top: 15px;            
+    z-index: 9999999999;
+}
+@media (min-width:320px) and (max-width:767px){
+    .flex_properites{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .Custm_img_size {
+        height: 200px;
+        width: 300px;
+      bottom: 20px;
+    }
+
+    .ul_Category li{
+        width: 90%;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+
+
+}
+
+

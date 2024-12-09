@@ -1,0 +1,32 @@
+<div class="category_product mt-4">
+    <ul class="flex_property">     
+        <li [ngClass]="{'active':IdColor == 1}" routerLinkActive="active" (click)="onTabClick(1)" class="position-relative  ms-1 overflow-hidden p-2 mt-1 text-center rounded-5 fw-bold width">
+            <span [routerLink]="['/home/ClotingWomens']">{{'Home.clothingWomens' | translate}}</span>
+        </li>
+
+        <li [ngClass]="{'active':IdColor == 2}" routerLinkActive="active" (click)="onTabClick(2)" class="position-relative  ms-1 overflow-hidden p-2 mt-1 text-center rounded-5 fw-bold width">
+            <span [routerLink]="['/home/AcceioresMobile']">{{'Home.AcceroiesMopile' | translate}}</span>
+        </li>
+
+        <li [ngClass]="{'active':IdColor == 3}" routerLinkActive="active" (click)="onTabClick(3)"
+            class="position-relative  overflow-hidden ms-1 p-2 mt-1 rounded-5 fw-bold width text-center">
+            <span  [routerLink]="['/home/ChildrenCategory']">{{'Home.clothingchildren' | translate}}</span>
+        </li>
+
+        <li  (click)="onTabClick(4)" routerLinkActive="active" class="position-relative  overflow-hidden ms-1 text-center p-2 rounded-5 mt-1 fw-bold width">
+            <span [routerLink]="['/home/ChildrenKids']" [ngClass]="{'active':IdColor == 4}">{{'Home.party-supplies' | translate}}</span>
+        </li>
+
+        <li [ngClass]="{'active':IdColor == 5}" routerLinkActive="active" (click)="onTabClick(5)"
+            class="position-relative  overflow-hidden ms-1 p-2 mt-1 text-center rounded-5 fw-bold width">
+            <span [routerLink]="['/home/FashionCategory']">{{'Home.Fashion' |
+                translate}}</span>
+        </li>
+
+        <li [ngClass]="{'active':IdColor == 6}" routerLinkActive="active" (click)="onTabClick(6)" class="position-relative  overflow-hidden ms-1 p-2 mt-1 rounded-5 fw-bold width text-center">
+            <span [routerLink]="['/home/bagGirl']">{{'Home.Kids' | translate}}</span> <span></span></li>
+
+        <li [ngClass]="{'active':IdColor == 7}" routerLinkActive="active" (click)="onTabClick(7)" class="position-relative overflow-hidden ms-1 p-2 mt-1 rounded-5 fw-bold width text-center">
+            <span [routerLink]="['/home/Beauty']">{{'Home.Beauty' | translate}}</span> <span></span></li>
+    </ul>
+</div>

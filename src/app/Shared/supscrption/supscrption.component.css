@@ -1,0 +1,103 @@
+.Fedback_and_message {
+    position: fixed;
+    border-radius: 10px;
+    padding: 10px;
+    right: 160px;
+    bottom: 1px;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    cursor:pointer ;
+    z-index: 4444444444444444444;
+
+}
+.Fedback_and_message div{
+    transition: 0.1s linear;
+}
+
+.Fedback_and_message div:hover{
+    background-color: #eee;
+    border-radius: 5px;
+}
+.Fedback_and_message div i {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+.desc_title_dilog{
+    color:#50c247
+}
+
+.div_delviry i{
+    background-color: #fdf6ed;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+
+}
+
+.div_delviry_desc{
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.div_dilog_input{
+    width: 90%;
+    margin: auto;
+}
+
+.div_dilog_input input{
+    border: 1px solid #ccc !important;
+    border-radius: 5px;
+}
+.div_dilog_input input:focus{
+outline: none;
+}
+
+.div_btn_dilog button{
+background-color:  #fb7701;
+}
+
+.div_desc_dilog p{
+font-size: 12px;
+}
+
+.div_dilog_icon i{
+font-size: 25px;
+}
+
+
+.div_dilog_icon div i:first-child{
+    color:#eb9245
+}
+.div_dilog_icon div i:nth-child(2){
+    color: blue;
+}
+
+
+.div_dilog_icon div i:nth-child(3){
+    color:black;
+    font-weight: bold;
+}
+
+
+
+
+@media(min-width:320px) and (max-width:767px){
+    .Fedback_and_message{
+        display: none;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1400px){
+    .Fedback_and_message{
+        display: none !important;
+    }
+}

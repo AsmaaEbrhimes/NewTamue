@@ -1,0 +1,70 @@
+
+ .sidebar{
+     height: 100vh !important;
+ }
+ 
+ .content_shopping_cart {
+    border-radius: 10px;
+    background-image: url('../../../../assets/imges/5ae4a0c1-285b-4149-80fa-890aff2ae8ca.webp') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 0px !important;
+} 
+
+.content_shopping_cart div p {
+    font-size: 15px;
+    background-color: red;
+}
+
+
+.subtotal p:first-child {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.subtotal {
+    background-color: #fff3e7;
+    border-radius: 5px;
+
+}
+
+.salary_sup p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sup_total_button button:first-child {
+    background-color: #FB8318;
+}
+
+.sup_total_button button:nth-child(2) {
+    border: 1px solid gray !important;
+    color: black !important;
+    transition: 0.5s linear;
+}
+
+.sup_total_button button:nth-child(2):hover{
+    border: 2px solid gray !important;
+
+}
+
+
+.inp_radio_shopping{
+    transform: scale(1.5);
+    cursor: pointer;    
+}
+.scroll__auto{
+    height: 400px;
+}
+
+.shoping_sup_procduc_choocer select{
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media(min-width:1200px) and (max-width:1400px){
+    .content_shopping_cart{
+        display: none;
+        visibility: hidden;
+    }
+}

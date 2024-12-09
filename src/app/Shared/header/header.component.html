@@ -1,0 +1,65 @@
+<app-filter-product #filter></app-filter-product>
+<div>
+    <div class="bg-black mb-0  p-0 m-0">
+        <div class="container">
+            <app-header2></app-header2>
+        </div>
+    </div>
+
+    <div class="content_header_two p-0 mb-0">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between text-light p-2">
+                <div>
+                    <h1 routerLink="/home" class="cursor-pointer">Tamue</h1>
+                </div>
+
+                <div class="List_header_one">
+                    <ul class="d-flex align-items-center">
+                        <li class="p-2"><i class="fa-regular fa-thumbs-up d-none d-xl-inline"></i>Beast Sellers</li>
+                        <li class="p-2">5-Star Rated</li>
+                        <li (mouseover)="filter.SHOWFILTERTION()" class="p-2"> <i
+                                class="fa-solid fa-icons d-none d-xl-inline"></i>Categores</li>
+                        <li class="p-2"> <i class="fa-solid fa-road-lock d-none d-xl-inline"></i>Free</li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center position-relative">
+                    <input class="border-0 rounded-pill " type="text" />
+                    <div style="position: absolute">
+                    </div>
+
+                    <i (click)="dialog.showDialog()"
+                        class="fa-solid fa-magnifying-glass position-absolute text-light rounded-5 text-center bg-black"></i>
+                </div>
+                <div class="list_responsive">
+                    <ul class="d-flex align-items-center">
+                        <li class="p-1"><i class="fa-solid fa-list-ul"></i></li>
+                        <li [routerLink]="['/home/ShoppingCart']" class="p-1"><i class="fa-solid fa-basket-shopping"></i></li>
+                        <li class="p-1"> <i class="fa-solid fa-user"></i></li>
+                    </ul>
+                </div>
+
+
+                <div class="List_header_three">
+                    <ul class="d-flex align-items-center">
+                        <li class="p-2">SignIn/Register<i class="fa-solid fa-user d-none d-xl-inline"></i></li>
+                        <li class=" p-2"><i class="fa-solid fa-headset d-sm-none  d-md-none d-xl-inline"></i>Support
+                        </li>
+                        <li class="p-2 d-flex align-items-center"><button class="border-0 p-2 rounded"
+                                (click)="ChangLanguage()">{{lang == 'en'? 'ar' :
+                                "en"}}<i class="fa-solid fa-globe ps-2 d-sm-none  d-md-none d-xl-inline"></i></button>
+                        </li>
+
+                        <li class="p-2"><i (click)="sidebarVisible2 = true"></i></li>
+                        <li [routerLink]="['/home/ShoppingCart']" class="p-2 bg-black rounded shopping"><i
+                                class="fa-solid fa-basket-shopping"></i></li>
+                        <li [routerLink]="['/home/WishList']" class="p-2 HeartIcon bg-black rounded ms-1"><i class="fa-solid fa-heart"></i></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-product-header #dialog></app-product-header>

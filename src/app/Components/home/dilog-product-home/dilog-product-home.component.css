@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.custem_style_dilog{
+    position: relative;
+    top:100px !important;
+    background-color: red;
+}
+
+p {
+    margin: 0;
+}
+
+.desc_dilog_produvt p:nth-child(2) {
+    color: #ccc;
+}
+.img_slider_dilog{
+    height: 370px;
+    object-fit: cover;
+}
+.slide_left{
+    left:15px;
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slide_right {
+    right:15px;
+    font-size: 40px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.desc_dilog_produvt :nth-child(3) span:nth-child(1){
+    background-color: #0b8702;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.desc_dilog_produvt :nth-child(4) span:nth-child(1){
+    background-color: #fb7701 ;
+}
+
+.desc_dilog_produvt :nth-child(4) span:nth-child(2){
+    color: #fb7701 ;
+    font-size: 20px;
+}
+
+.desc_dilog_produvt :nth-child(4) span:nth-child(3){
+    border: 1px solid #fb7701 ;
+    color:#fb7701
+}
+
+.content_product_dilog{
+    border: 2px solid #fb7701 ;
+}
+
+.content_product_dilog div:first-child{
+    background-color: #fb7701 ;
+}
+
+section:focus{
+    outline: none;
+    border: none;
+}
+
+.content_product_dilog div:nth-child(2) span:last-child{
+    color:#fb7701
+
+}
+
+.btn_dilog_product{
+background-color: #fb7701;
+
+}
+
+
+::ng-deep [type=button]:not(:disabled), [type=reset][_ngcontent-ng-c287053803][_ngcontent-ng-c2348607224]:not(:disabled), [type=submit][_ngcontent-ng-c287053803][_ngcontent-ng-c2348607224]:not(:disabled), button[_ngcontent-ng-c287053803][_ngcontent-ng-c2348607224]:not(:disabled) {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    position: absolute;
+    right: 10px;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+
+::ng-deep .p-dialog {
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    max-height: 90%;
+    transform: scale(1);
+    position: relative;
+    top: 10px !important;
+
+    z-index: 999999999999999999999999999999999999999999999999999999999 !important;
+
+}
+img{
+    cursor: pointer;
+}

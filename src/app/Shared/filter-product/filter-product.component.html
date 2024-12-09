@@ -1,0 +1,30 @@
+@if(showFilter){
+<div class="position-absolute bg-light rounded w-50 text-center m-auto content__filter__product"
+    style="z-index: 9999; padding: 20px;">
+    <div class="filter_product_one rounded">
+        <div class="row overflow-hidden">
+            <div class="col-sm-5 col-md-3 col-xl-2 col__1">
+                <ul class="position-fixed z-index-5 m-0 p-1">
+                    <li (mouseover)="showProductHover('clothing Womens')" class="d-flex justify-content-between mt-4"><span>{{'Home.clothingWomens' | translate}}</span> <span><i class="fa-solid fa-angle-right d-sm-none d-md-none d-xl-inline ms-1"></i></span></li>
+                    <li (mouseover)="showProductHover('Acceroies Mopile')" class="d-flex justify-content-between mt-4"><span>{{'Home.AcceroiesMopile' | translate}}</span> <span><i class="fa-solid fa-angle-right ms-1 d-sm-none d-md-none d-xl-inline"></i></span></li>
+                    <li (mouseover)="showProductHover('clothing children')" class="d-flex justify-content-between mt-4"><span>{{'Home.clothingchildren' | translate}}</span> <span><i class="fa-solid fa-angle-right ms-1 d-sm-none d-md-none d-xl-inline"></i></span></li>
+                    <li (mouseover)="showProductHover('party-supplies')"class="d-flex justify-content-between mt-4"><span>{{'Home.party-supplies' | translate}}</span> <span><i class="fa-solid fa-angle-right ms-1 d-sm-none d-md-none d-xl-inline"></i></span></li>
+                    <li (mouseover)="showProductHover('Fashion')"class="d-flex justify-content-between mt-4"><span>{{'Home.Fashion' | translate}}</span> <span><i class="fa-solid fa-angle-right ms-1 d-sm-none d-md-none d-xl-inline"></i></span></li>
+                    <li (mouseover)="showProductHover('Kids')"class="d-flex justify-content-between mt-4"><span>{{'Home.Kids' | translate}}</span> <span><i class="fa-solid fa-angle-right ms-1 d-sm-none d-md-none d-xl-inline"></i></span></li>
+                    <li (mouseover)="showProductHover('Beauty')"class="d-flex justify-content-between mt-4"><span>{{'Home.Beauty' | translate}}</span> <span><i class="fa-solid fa-angle-right ms-1 d-sm-none d-md-none d-xl-inline"></i></span></li>
+                </ul>
+            </div>
+            <div class="col-sm-8 col-md-9 col-xl-10 rounded col__2">
+                <div class="d-flex justify-content-center flex-wrap w-100 align-items-center">
+                    <div class="me-3 mt-3" *ngFor="let item of filteredProducts">
+                        <img class="rounded-circle img_product"
+                            [src]="item.image ? item.image : 'assets/imges/a46b4cb8-c9e5-4ed9-80da-6c1cc37a4d44.webp'" />
+                        <p>{{item?.category}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filter_product_two"></div>
+</div>
+}

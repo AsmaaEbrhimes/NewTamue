@@ -1,0 +1,43 @@
+{
+    "register": {
+        "CreateAccount": "تسجيل حساب جديد"
+    },
+    "Login": {
+        "login": "تسجيل الدخول"
+    },
+    "Installment": {
+        "installment": "3 أقساط شهرية بدون فوائد",
+        "delvire": "شحن مجاني خاص لك",
+        "almost": "نفدت الكمية تقريبًا",
+        "Qty": "الكميه",
+        "Add": "اضف الي السله"
+    },
+    "Home": {
+        "Continue": "تخطي",
+        "Recentlysearched ": "البحث الاخير",
+        "supTotal": "العد الكلي",
+        "Freeshippingspecialforyou": "شحن مجاني خاص لك",
+        "check": "فحص",
+        "GoCart": "الذهاب الي عربه التسوق",
+        "Selectall": "تحديد الكل",
+        "clothingWomens": "ملابس حريمي",
+        "AcceroiesMopile": "اكسسوورات موبايل",
+        "clothingchildren": "ملابس اطفال",
+        "party-supplies": "بالونات حافلات",
+        "Fashion": "فاشون",
+        "Kids": "اطفالي",
+        "Beauty": "تجميل"
+    },
+    "ShoppingCart":{
+        "Alldataisencrypted":"جميع البيانات مشفره",
+        "SignIn/Register":"تسجيل الدخول والخروج",
+        "FreeshippingfromTemuand":" شحن مجاني من تمو بعض المزودين المحليين ",
+        "FreeshippingfromTemutWO":"شحن مجاني من تمو",
+        "SelectAll":"تحديد الكل",
+        "LocalWareHouse":"المستودع المحلي",
+        "All":"الكل",
+        "ShipsFromTamue":"يشحن من تمو"
+
+
+    }
+}

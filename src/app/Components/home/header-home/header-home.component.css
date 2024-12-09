@@ -1,0 +1,68 @@
+
+
+.temus_comments {
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.temus_comments ul li {
+    padding: 10px;
+    position: relative;
+}
+
+
+.temus_comments ul li:not(:first-child)::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 95%;
+    border-left: 1px solid white;
+    margin-top: 0px;
+    position: absolute;
+    left: 0;
+}
+
+.temus_comments div:first-child {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: 0.3s linear;
+}
+
+.temus_comments div:first-child:hover {
+    opacity: 0.8;
+}
+
+.temus_comments div:first-child h4 {
+    padding: 10px;
+}
+
+.temus_comments_two {
+    color: green;
+    padding: 20px;
+
+    transition: 0.3s linear;
+}
+
+.temus_comments_two h4 i{
+    color: green
+}
+
+
+.temus_comments_two:hover {
+    background-color: #eee;
+
+}
+
+.btn_tamue{
+    background-color: #FFA500;
+}
+
+
+
+
+

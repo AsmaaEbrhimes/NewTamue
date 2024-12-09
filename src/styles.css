@@ -1,1 +1,115 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #eee;
+
+}
+
+
+.content_shopping_cart {
+    background-image: url('assets/imges/5ae4a0c1-285b-4149-80fa-890aff2ae8ca.webp') !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed !important;
+    top: 0 !important;
+    right: 0;
+    z-index: 999999999999;
+}
+
+.width_col_one{
+    width: 90%;
+}
+
+.width_col_two{
+    width: 10%;
+}
+.Container {
+    width: 95%;
+    margin: auto;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+
+html,
+body {
+    padding: 0;
+    
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+img{
+    cursor: pointer;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+
+.category_product ul li{
+    background-color: #ccc;
+    border: 1px solid rgb(200, 194, 194);
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.red{
+    color: red;
+}
+
+.col_hover{
+    transition: 0.5s linear;
+}
+
+.col_hover:hover{
+    box-shadow: 0 0 20px black;
+}
+
+@media(min-width:320px) and (max-width:767px){
+    .width_col_two {
+        width: 0 !important;
+        overflow: hidden;
+        position: absolute;
+        display: none;
+    }
+
+    .width_col_one {
+        width: 100%;
+    }
+}
+
+
+@media(min-width:767px) and (max-width:1200px){
+    .width_col_two {
+        width: 0 !important;
+        overflow: hidden;
+        position: absolute;
+        display: none;
+    }
+
+    .width_col_one {
+        width: 100% !important;
+        
+    }
+}
+

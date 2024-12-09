@@ -1,0 +1,52 @@
+.width{
+    width: 15%;
+}
+
+.flex_property{
+    display: flex;
+    justify-content: center;
+}
+
+.category_product ul li {
+    border: 1px solid black;
+    transition: 0.3s linear
+}
+
+.category_product ul li:hover{
+    background-color: #deac16 !important;
+}
+
+
+.active{
+    background-color: #deac16 !important;
+}
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:767px){
+    .flex_property{
+        flex-wrap: wrap;
+    }
+    .width{
+        width: 100%;
+    } 
+}
+
+@media (min-width:767px) and (max-width:1200px){
+    .width{
+        width: 25%;
+        flex-wrap: wrap;
+    } 
+    .flex_property{
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px){
+    .width{
+        width: 50%;
+    } 
+}
