@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { GenralService } from '../../../core/Services/genral.service';
 import { HomeService } from '../../../core/Services/home.service';
 import { RefreshWatcherService } from '../../../core/Services/refresh-watcher.service';
@@ -9,16 +9,17 @@ import { EnumePage } from '../../../core/Enums/Enum-page';
   styleUrl: './dilog-product-home.component.css'
 })
 export class DilogProductHomeComponent {
-  constructor(private services: HomeService , private gs:GenralService , private refreshWatcher:RefreshWatcherService) { 
-    this.dataHome = this.services.AllDataHome() 
+  constructor(private services: HomeService, private gs: GenralService, private refreshWatcher: RefreshWatcherService) {
+    this.dataHome = this.services.AllDataHome()
   }
   visible2 = false;
   dataHome: any = []
-  ShowSuccess:boolean = false
+  ShowSuccess: boolean = false
   findProduct: any
   mainImg: any
   currentIndex: number = 1
   cartmainarray: any[] = [];
+
 
   open(id: any) {
     let findData = this.dataHome.find((ele: any) => ele.id == id)
@@ -66,13 +67,17 @@ export class DilogProductHomeComponent {
         setTimeout(() => {
           this.ShowSuccess = false
         }, 3000);
-        this.refreshWatcher.refreshPage(EnumePage.DilogAdd); 
+        this.refreshWatcher.refreshPage(EnumePage.DilogAdd);
         this.refreshWatcher.refreshPage(EnumePage.ToggelSidebar);
       }
-     
+
     }
   }
 
+
+  SetQuinty(event: any) {
+    this.findProduct.quinty = +event.target.value
+  }
 
 
 

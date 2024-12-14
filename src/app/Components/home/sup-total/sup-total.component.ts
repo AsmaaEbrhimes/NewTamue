@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { map, Subscription } from 'rxjs';
 import { GenralService } from '../../../core/Services/genral.service';
 import { RefreshWatcherService } from '../../../core/Services/refresh-watcher.service';
 import { EnumePage } from '../../../core/Enums/Enum-page';
@@ -43,6 +43,18 @@ export class SupTotalComponent {
       }
     })
   }
+
+  UpdateQunitityOnSupTotal(event: any, item: any) {
+    const products = localStorage.getItem('cartmainProduct');
+    if (products) {
+      let parseProducts = JSON.parse(products)
+      let findProduct = parseProducts.find((ele: any) => ele.id == item.id)
+      findProduct.quinty = +event.target.value
+      localStorage.setItem('cartmainProduct', JSON.stringify(parseProducts))
+    }
+  }
+
+
 }
 
 

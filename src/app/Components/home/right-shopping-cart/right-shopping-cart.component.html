@@ -3,7 +3,7 @@
     <div class="border_bottom mt-">
         <div class="d-flex justify-content-between">
             <p>Item(s) total:</p>
-            <p>£435.92</p>
+            <p>{{ calculateTotalSalary() | currency:'GBP':'symbol'}}</p>
         </div>
         <div class="d-flex justify-content-between">
             <p>Item(s) discount:</p>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="d-flex justify-content-between mt-4">
-        <p>Total <span>(14 items)</span></p>
+        <p>Total <span>({{LengthAllProduct}} items)</span></p>
         <p>£265.88</p>
     </div>
     <button

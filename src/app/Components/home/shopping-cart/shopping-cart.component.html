@@ -37,7 +37,7 @@
                     class="fa-solid fa-check p-1"></i>{{"ShoppingCart.FreeshippingfromTemutWO" | translate}}</p>
 
             <div class="mt-4 flex_properites w-100 " *ngFor="let product of DataShoping">
-                <div class="d-flex align-items-center">
+                <div class="d-flex ">
                     <p class="p-3"><i class="fa-solid fa-check bg-dark text-light rounded-circle p-1 text-center"></i>
                     </p>
                     <img class="Custm_img_size position-relative" [src]="'assets/imges/' + product.img1" />
@@ -45,12 +45,13 @@
                 <div class="w-100 ms-2 border_card">
                     <div class="d-flex">
                         <p class="p-0 w-100">{{product.title}} </p>
-                        <i (click)="DeleteProductFromLocalStorage(product._id)" class="fa-regular fa-trash-can w-25 fw-bold fs-4 text-right HoverIcon"></i>
+                        <i (click)="DeleteProductFromLocalStorage(product.id)" class="fa-regular fa-trash-can w-25 fw-bold fs-4 text-right HoverIcon"></i>
                     </div>
                     <p class="p-0 m-0">Combination Of Hair Clips-14-piece Set</p>
                     <p class="mt-3">£{{product.salary}}<span class="border_color p-1 ms-1 rounded">-83%</span></p>
                     <div class="text-right d-flex justify-content-end">
-                        <select class="custem_width_select p-1 w-25 rounded bg-transparent">
+                        <select (click)="UpdateProductonShoppimg($event , product)"  class="custem_width_select p-1 w-25 rounded bg-transparent">
+                            <option>{{product?.quinty}}</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
