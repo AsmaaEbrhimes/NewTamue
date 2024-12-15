@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   loadChildren: () => import('./Components/registering/registering.module').then(m => m.RegisteringModule)
-  // },
+  {
+    path: '',
+    loadChildren: () => import('./Components/auth/auth.module').then(m => m.AuthModule)
+  },
   // {
   //   path:'login',
   //   loadChildren: () => import('./Components/login/login.module').then(m => m.LoginModule)

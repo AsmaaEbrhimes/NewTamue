@@ -3,7 +3,18 @@
         "CreateAccount": "تسجيل حساب جديد"
     },
     "Login": {
-        "login": "تسجيل الدخول"
+        "login": "تسجيل الدخول",
+        "Tamue": "تيمو",
+        "SignIn": "تسجيل الدخول",
+        "EnterYourEmail": "من فضلك قم بادخال الايميل",
+        "EnterYourName": "من فضلك قم بادخال الاسم",
+        "EnterYourPassword": "من فضلك قم بادخال الباسورد",
+        "Submit": "ارسال",
+        "Needhelp":"هل تحتاج المساعده",
+        "NewtoTamue":"الجديد من تيمو",
+        "CreateyourTemue":"?هل تحتاج الي انشاء حساب علي تيمو"
+
+
     },
     "Installment": {
         "installment": "3 أقساط شهرية بدون فوائد",
@@ -28,16 +39,14 @@
         "Kids": "اطفالي",
         "Beauty": "تجميل"
     },
-    "ShoppingCart":{
-        "Alldataisencrypted":"جميع البيانات مشفره",
-        "SignIn/Register":"تسجيل الدخول والخروج",
-        "FreeshippingfromTemuand":" شحن مجاني من تمو بعض المزودين المحليين ",
-        "FreeshippingfromTemutWO":"شحن مجاني من تمو",
-        "SelectAll":"تحديد الكل",
-        "LocalWareHouse":"المستودع المحلي",
-        "All":"الكل",
-        "ShipsFromTamue":"يشحن من تمو"
-
-
+    "ShoppingCart": {
+        "Alldataisencrypted": "جميع البيانات مشفره",
+        "SignIn/Register": "تسجيل الدخول والخروج",
+        "FreeshippingfromTemuand": " شحن مجاني من تمو بعض المزودين المحليين ",
+        "FreeshippingfromTemutWO": "شحن مجاني من تمو",
+        "SelectAll": "تحديد الكل",
+        "LocalWareHouse": "المستودع المحلي",
+        "All": "الكل",
+        "ShipsFromTamue": "يشحن من تمو"
     }
 }

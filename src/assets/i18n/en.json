@@ -4,7 +4,19 @@
     },
 
     "Login": {
-        "login": "Login"
+        "login": "Login",
+        "Tamue":"Tamue",
+        "SignIn":"SignIn",
+        "EnterYourEmail":"Enter Your Email",
+        "EnterYourName":"Enter Your Name",
+        "EnterYourPassword":"Enter Your Password",
+        "Submit":"Submit",
+       "Needhelp":"Need help?",
+       "NewtoTamue":"New to Tamue",
+       "CreateyourTemue":"Create your Temue?"
+
+
+
     },
 
     "Installment": {
