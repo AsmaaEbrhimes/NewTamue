@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Grand+Hotel&family=Playwrite+HR+Guides&family=Rochester&display=swap');  
+
+.custem-font{
+  font-family: "Grand Hotel", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #deac16;
+}
+
+.top{
+  top: 30px;
+}
+.other_property{
+    height: 100vh;
+    border: 1px solid rgb(153, 151, 151);
+
+}
+
+.border_form{
+    border: 1px solid rgb(153, 151, 151);
+}
+.propert_inp:not(:last-child){
+  border-bottom: 1px solid rgb(212, 211, 211);
+}
+
+
+.propert_inp::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;        
+    width: 0%;        
+    height: 2px;
+    background-color: #deac16;
+    transform: translateX(-50%); 
+    transition: width 0.3s ease, left 0.35s ease;
+}
+
+.propert_inp:focus-within::after {
+    width: 100%;       
+}
+
+
+
+
+.background_btn{
+    background-color: #deac16;
+    box-shadow: 0 0 4px black;
+}
+
+.font_size{
+    font-size: 13px;
+}
+
+.border_left{
+    background-color: rgb(212, 211, 211);
+    height:1px ;
+    width: 8%;
+}
+
+.border_right{
+    background-color: rgb(212, 211, 211);
+    height: 1px ;
+    width: 8%;
+}
+
+.shadowandborder{
+    box-shadow: 0 0 5px black;
+    transition: 0.3s linear;
+}
+
+.shadowandborder:hover{
+    background-color: rgb(227, 222, 222);
+}
+
+input:focus::placeholder{
+    top: -1px;
+    font-size: 0.75rem;
+    transition: all 0.3s linear;
+}
+
+input::placeholder {
+    position: absolute;
+    pointer-events: none;
+}
+
+.color-orange{
+    color: #deac16;
+}

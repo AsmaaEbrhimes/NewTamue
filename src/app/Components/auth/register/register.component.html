@@ -1,1 +1,44 @@
-<p>register works!</p>
+<div class="d-flex flex-column justify-content-center align-items-center other_property">
+    <h1 class="custem-font">Tamue</h1>
+    <div class="border_form w-sm-75 w-md-50 w-xl-25 p-2 rounded">
+        <h4 class="mb-4">Register</h4>
+        <form class="w-100 rounded ">
+
+            <div class="propert_inp position-relative mb-5 d-flex align-items-center">
+                <input class="d-block bg-transparent w-100 p-1 border-0" placeholder="{{'Login.EnterYourEmail'| translate}}" />
+                <span><i class="fa-solid fa-envelope fs-5 color-orange"></i></span>
+            </div>
+
+            <div class="propert_inp position-relative mb-5 d-flex align-items-center">
+                <input class="d-block bg-transparent w-100 p-1 border-0" placeholder="{{'Login.EnterYourName'| translate}}" />
+                <span><i class="fa-solid fa-user fs-5 color-orange"></i></span>
+            </div>
+
+            <div class="propert_inp position-relative mb-5  d-flex align-items-center">
+                <input class=" d-block bg-transparent w-100 p-1 border-0" placeholder="{{'Login.EnterYourPassword'| translate}}" />
+                <span><i class="fa-solid fa-eye-slash fs-5 color-orange"></i></span>
+            </div>
+
+            <div class="propert_inp position-relative mb-3  d-flex align-items-center">
+                <input class=" d-block bg-transparent w-100 p-1 border-0" placeholder="confirmePassword" />
+                <span><i class="fa-regular fa-circle-check fs-5 text-success"></i></span>
+            </div>
+            <button
+                class="text-center m-auto d-block w-100 border-0 p-1 text-light rounded background_btn">Regiester</button>
+        </form>
+        <div>
+            <p class="font_size mt-3">By continuing, you agree to Amazon's <span class="text-primary">Conditions of
+                    Use</span> and <span class="text-primary">Privacy Notice.</span></p>
+            <p><i class="fa-solid fa-caret-right text-secondary pe-1"></i><span class="text-primary">{{"Login.Needhelp"| translate}}</span>
+            </p>
+            <p class="font_size fw-bold mb-0">Buying for work?</p>
+            <p class="font_size mt-2 text-primary">Shop on temo Business</p>
+        </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center w-100 mt-2">
+        <p class="border_left m-0"></p>
+        <p class=" m-0 position-relative p-1">{{"Login.NewtoTamue"| translate}}?</p>
+        <p class="border_right m-0"></p>
+    </div>
+    <button [routerLink]="['/']" class="w-sm-75  text-center d-block border-0 p-1 text-dark rounded shadowandborder mt-2">are You Have Account</button>
+</div>
