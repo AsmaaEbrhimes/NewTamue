@@ -5,9 +5,9 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class GenralService {
-  //  $ShowSuccess = new BehaviorSubject<boolean>(false);
-  //  $ShowSidebar = new BehaviorSubject<boolean>(false);
-   
+  $ShowTostr = new BehaviorSubject<boolean>(false);
+  $TostrText = new BehaviorSubject<string>('');
+
   constructor() { }
 
 }

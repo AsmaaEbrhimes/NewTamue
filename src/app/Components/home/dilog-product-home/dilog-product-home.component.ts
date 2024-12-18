@@ -3,6 +3,8 @@ import { GenralService } from '../../../core/Services/genral.service';
 import { HomeService } from '../../../core/Services/home.service';
 import { RefreshWatcherService } from '../../../core/Services/refresh-watcher.service';
 import { EnumePage } from '../../../core/Enums/Enum-page';
+import { timer } from 'rxjs';
+
 @Component({
   selector: 'app-dilog-product-home',
   templateUrl: './dilog-product-home.component.html',
@@ -69,8 +71,13 @@ export class DilogProductHomeComponent {
         }, 3000);
         this.refreshWatcher.refreshPage(EnumePage.DilogAdd);
         this.refreshWatcher.refreshPage(EnumePage.ToggelSidebar);
+      } else {
+        this.gs.$ShowTostr.next(true)
+        this.gs.$TostrText.next('لقد تم اضافه المنتج من قبل')
+        timer(2500).subscribe(() => {
+          this.gs.$ShowTostr.next(false);
+        });
       }
-
     }
   }
 

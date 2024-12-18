@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { SharedRoutingModule } from './shared-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { SidebarModule } from 'primeng/sidebar';
@@ -16,6 +15,7 @@ import { Header2Component } from './header/header2/header2.component';
 import { ProductHeaderComponent } from './product-header/product-header.component';
 import { FilterProductComponent } from './filter-product/filter-product.component';
 import { SuccessComponent } from './success/success.component';
+import { TostrTopComponent } from './tostr-top/tostr-top.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +26,7 @@ import { SuccessComponent } from './success/success.component';
     ProductHeaderComponent,
     FilterProductComponent,
     SuccessComponent,
+    TostrTopComponent,
   ],
   imports: [
     CommonModule,
@@ -36,13 +37,14 @@ import { SuccessComponent } from './success/success.component';
     InputTextModule,
     BadgeModule,
     AccordionModule,
-    TranslatingModule
+    TranslatingModule,
   ],
   exports: [
     HeaderComponent,
     SupscrptionComponent,
     FooterComponent,
-    SuccessComponent
+    SuccessComponent,
+    TostrTopComponent
   ]
 })
 export class SharedModule { }

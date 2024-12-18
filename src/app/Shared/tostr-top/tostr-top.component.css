@@ -1,0 +1,56 @@
+.property-tostr-top{
+    left: 50%;
+    right: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 9999999999;
+    background-color: black;
+    top:100px;
+    font-size:18px;
+    width: 20%;
+    opacity: 0;
+}
+
+.opicty{
+    opacity: 1;
+    transition: opacity 10s ease;
+    animation: fadeIn 1.5s forwards;
+}
+
+.property-tostr-top i{
+    color: green;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.hide-tostr {
+    animation: fadeOut 1.5s forwards; 
+}
+
+@media(min-width:320px) and (max-width:767px){
+    .property-tostr-top{
+        width: 50%;
+    }
+}
+
+@media(min-width:767px) and (max-width:1200px){
+    .property-tostr-top{
+        width: 23%;
+    }
+}
