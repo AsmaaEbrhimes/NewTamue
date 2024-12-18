@@ -10,3 +10,17 @@
 .list_header_one li:nth-child(2) , .list_header_one li:nth-child(3){
     color: #f9f1a3;
 }
+
+
+
+@media(min-width:320px) and (max-width:767px){
+    .custem-size{
+font-size: 10px;
+    }
+}
+
+@media(min-width:767px) and (max-width:1200px){
+    .custem-size{
+        font-size: 15px;
+    }
+}

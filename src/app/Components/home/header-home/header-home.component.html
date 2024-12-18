@@ -1,20 +1,19 @@
-
 <div>
     <div class="Container">
-        <div class="temus_comments mt-4" (click)="showDialog()">
+        <div class="temus_comments w-100 rounded mt-4" (click)="showDialog()">
             <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <h4>Temu's Commitments</h4> 
+                <h4 class="custem-size m-0">Temu's Commitments</h4>
                 <ul class=" d-flex flex-wrap">
-                    <li><i class="fa-solid fa-lock"></i> Secure</li>
-                    <li><i class="fa-regular fa-credit-card"></i> Save Payments</li>
-                    <li><i class="fa-solid fa-truck"></i> Delivery guarantee</li>
+                    <li class="position-relative p-2 m-0 custem-size"><i class="fa-solid fa-lock"></i> Secure</li>
+                    <li class="custem-size p-2 m-0"><i class="fa-regular fa-credit-card"></i> Save Payments</li>
+                    <li class="custem-size p-2 m-0"><i class="fa-solid fa-truck"></i> Delivery guarantee</li>
                 </ul>
             </div>
             <div class="temus_comments_two d-flex justify-content-between align-items-center">
-                <h4> <i class="fa-solid fa-bell"></i> Be wary of about delivery issues
+                <h4 class="custem-size"> <i class="fa-solid fa-bell"></i> Be wary of about delivery issues
                     claming
                     to be from Evri <i class="fa-solid fa-angle-right"></i></h4>
-                <h4>View</h4>
+                <h4 class="custem-size">View</h4>
             </div>
 
 
@@ -32,10 +31,10 @@
                         status
                         of your package on Temu's order page or contact the courier directly.</p>
                 </div>
-                <button (click)="visible = false" class="w-50 m-auto d-block text-center p-3 text-light border-0 rounded-5 btn_tamue">Ok</button>
+                <button (click)="visible = false"
+                    class="w-50 m-auto d-block text-center p-3 text-light border-0 rounded-5 btn_tamue">Ok</button>
                 <div>
-                    <p
-                        style="margin:auto ; text-align:center ; width: 50%; padding-bottom: 20px; padding-top: 20px;">
+                    <p style="margin:auto ; text-align:center ; width: 50%; padding-bottom: 20px; padding-top: 20px;">
                         If you come across anything suspicious, please report it in time</p>
                 </div>
             </p-dialog>

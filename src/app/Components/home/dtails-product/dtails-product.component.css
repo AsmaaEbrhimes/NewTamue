@@ -1,5 +1,6 @@
+
+
 .content_shopping_cart {
-    border-radius: 10px;
     background-image: url('../../../../assets/imges/5ae4a0c1-285b-4149-80fa-890aff2ae8ca.webp') !important;
     background-repeat: no-repeat;
     background-size: contain;
@@ -29,6 +30,9 @@ i{
 .custem_width{
     width: fit-content;
 }
+
+
+
 @media(min-width:320px) and (max-width:767px) {
     .side1 {
         width: 100%;

@@ -12,6 +12,7 @@
 body {
     overflow-x: hidden;
     background-color: #eee;
+    background-color: white;
 
 }
 
@@ -56,6 +57,8 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+
 
 img{
     cursor: pointer;
@@ -111,5 +114,20 @@ input:focus{
         width: 100% !important;
         
     }
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 100px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(152, 152, 152) !important; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ccc; 
+    border-radius: 10px;
 }
 

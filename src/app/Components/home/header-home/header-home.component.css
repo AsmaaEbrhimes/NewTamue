@@ -1,16 +1,10 @@
 
-
 .temus_comments {
-    width: 100%;
     border: 1px solid green;
-    border-radius: 10px;
     cursor: pointer;
 }
 
-.temus_comments ul li {
-    padding: 10px;
-    position: relative;
-}
+
 
 
 .temus_comments ul li:not(:first-child)::before {
@@ -62,7 +56,30 @@
     background-color: #FFA500;
 }
 
+.custem-size{
+    font-size: 16px;
+}
 
+@media(min-width:320px) and (max-width:767px){
+    .custem-size{
+        font-size: 11px;
+    }
+    .temus_comments ul li:not(:first-child)::before {
+        border-left: 0;
+    }
+}
+
+@media(min-width:767px) and (max-width:1200px){
+    .custem-size{
+        font-size: 15px;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1400px){
+    .custem-size{
+        font-size: 15px;
+    }
+}
 
 
 

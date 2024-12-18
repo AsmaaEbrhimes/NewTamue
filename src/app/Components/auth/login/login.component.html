@@ -1,22 +1,21 @@
-<div class="d-flex flex-column justify-content-center align-items-center other_property">
-    <h1 class="custem-font">{{"Login.Tamue"| translate}}</h1>
-    <div class="border_form w-sm-75 w-md-50 w-xl-25 p-2 rounded">
-        <h4 class="mb-4">{{"Login.SignIn"| translate}}</h4>
-        <form class="w-100 rounded ">
+<div class="text-light d-flex flex-column justify-content-center align-items-center other_property">
+    <h1 class="custem-font color-green">{{"Login.Tamue"| translate}}</h1>
+    <div class="border_form  p-2 rounded">
+        <h4 class="mb-4 text-dark">{{"Login.SignIn"| translate}}</h4>
+        <form class="w-100 rounded">
 
             <div class="propert_inp position-relative mb-5 d-flex align-items-center">
                 <input class="d-block bg-transparent w-100 p-1 border-0" placeholder="{{'Login.EnterYourEmail'| translate}}" />
-                <span><i class="fa-solid fa-envelope fs-5 color-orange"></i></span>
+                <span><i class="fa-solid fa-envelope fs-5 color-green"></i></span>
             </div>
 
             <div class="propert_inp position-relative mb-5 d-flex align-items-center">
                 <input class="d-block bg-transparent w-100 p-1 border-0" placeholder="{{'Login.EnterYourName'| translate}}" />
-                <span><i class="fa-solid fa-user fs-5 color-orange"></i></span>
+                <span><i class="fa-solid fa-user fs-5 color-green"></i></span>
             </div>
-
             <div class="propert_inp position-relative mb-3  d-flex align-items-center">
                 <input class=" d-block bg-transparent w-100 p-1 border-0" placeholder="{{'Login.EnterYourPassword'| translate}}" />
-                <span><i class="fa-solid fa-eye-slash fs-5 color-orange"></i></span>
+                <span><i class="fa-solid fa-eye-slash fs-5 color-green"></i></span>
             </div>
             <button
                 class="text-center m-auto d-block w-100 border-0 p-1 text-light rounded background_btn">{{"Login.Submit"| translate}}</button>
@@ -37,3 +36,4 @@
     </div>
     <button [routerLink]="['/Register']" class="w-sm-75  text-center d-block border-0 p-1 text-dark rounded shadowandborder mt-2">{{"Login.CreateyourTemue"| translate}}</button>
 </div>
+

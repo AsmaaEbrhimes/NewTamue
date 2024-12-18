@@ -13,11 +13,20 @@
 .other_property{
     height: 100vh;
     border: 1px solid rgb(153, 151, 151);
+    background-image: url('../../../../assets/imges/article_22_1200x800_268978.jpg');
+   background-repeat: no-repeat; 
+   background-size: cover; 
+}
 
+.custum-background{
+    background-color: rgb(237, 74, 74);
 }
 
 .border_form{
-    border: 1px solid rgb(153, 151, 151);
+    width: 30%;
+    background-color: rgb(240 233 233 / 46%);;
+    backdrop-filter: blur(7px);
+
 }
 .propert_inp:not(:last-child){
   border-bottom: 1px solid rgb(212, 211, 211);
@@ -80,10 +89,30 @@ input:focus::placeholder{
 }
 
 input::placeholder {
+    color: white;
     position: absolute;
     pointer-events: none;
 }
 
-.color-orange{
-    color: #deac16;
+.color-green{
+    color: green;
+}
+
+@media(min-width:320px) and (max-width:767px){
+    .border_form{
+        width: 90%;
+    }
+}
+
+@media(min-width:767px) and (max-width:1200px){
+    .border_form{
+        width: 40%;
+    }
+}
+
+
+@media(min-width:1200px) and (max-width:1400px){
+    .border_form{
+        width: 30%;
+    }
 }

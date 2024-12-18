@@ -1,4 +1,4 @@
-.content_details_product p:nth-child(2) span:nth-child(1),
+ .content_details_product p:nth-child(2) span:nth-child(1),
 .content_details_product p:nth-child(2) span:nth-child(3) {
     color: #FB8318;
 }
@@ -59,3 +59,11 @@
     background-color: #FB8318;
     font-size: 20px;
 }
+
+.yellow-color{
+    color: yellow;
+}
+
+
+
+
