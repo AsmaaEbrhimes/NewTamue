@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Grand+Hotel&family=Playwrite+HR+Guides&family=Rochester&display=swap');  
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Grand+Hotel&family=Playwrite+HR+Guides&family=Rochester&display=swap');   */
 
 .custem-font{
-  font-family: "Grand Hotel", cursive;
+  /* font-family: "Grand Hotel", cursive; */
     font-weight: 400;
     font-style: normal;
     color: #deac16;
