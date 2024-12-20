@@ -13,8 +13,9 @@ export class TabsProductsComponent {
 
 
 
-  onTabClick(number: number) {
+  onTabClick(number: number , route:any) {
     this.IdColor = number;
+    this.router.navigate([route])
   }
 
 
